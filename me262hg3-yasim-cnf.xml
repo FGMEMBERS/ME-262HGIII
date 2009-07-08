@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList include="me262hg3-base.xml">
+
+ <sim>
+
+  <description>Messerschmitt Me-262 HG III (YASim)</description>
+  <flight-model>yasim</flight-model>
+  <aero>me262hg3-yasim</aero>
+
+ </sim>
+
+ <yasim>
+   <me262hg3>
+     <pilot-lb>128</pilot-lb>
+   </me262hg3>
+ </yasim>
+
+</PropertyList>
+
