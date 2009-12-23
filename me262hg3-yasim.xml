@@ -14,7 +14,6 @@
     <control-setting axis="/controls/engines/engine[1]/throttle" value="0.2"/>
     <control-setting axis="/controls/flight/flaps" value="1"/>
     <control-setting axis="/controls/gear/gear-down" value="1"/>
-    <solve-weight idx="0" weight="170"/>
   </approach>
 
   <cruise speed="450" alt="19500" fuel="1.0">
@@ -22,29 +21,24 @@
     <control-setting axis="/controls/engines/engine[1]/throttle" value="1"/>
     <control-setting axis="/controls/flight/flaps" value="0.0"/>
     <control-setting axis="/controls/gear/gear-down" value="0"/>
-    <solve-weight idx="0" weight="170"/>
   </cruise>
 
-  <cockpit x="1.26" y="0.0" z="0.95"/>
-
-  <weight x="1.22" y="0" z="0.43" mass-prop="/yasim/me262/pilot-lb"/>
-  <ballast x="3.9" y="0" z="0.25" mass="900"/>
+  <cockpit x="-2.291" y="0.0" z="0.267"/>
 
   <!-- Fuselage with engine on top -->
-  <fuselage ax="6.435" ay="0" az="0.041" bx="-6.045" by="0" bz="0.207" width="1.37" taper="0.5" midpoint="0.40"/>
+  <fuselage ax="6.181" ay="0" az="-0.555" bx="-6.212" by="0" bz="-0.555" width="1.37" taper="0.5" midpoint="0.40"/>
 
-  <fuselage ax="4.021" ay="1.86" az="-0.67" bx="-0.53" by="1.86" bz="-0.67" width="0.75" taper="0.8" midpoint="0.50"/>
+  <fuselage ax="3.321" ay="1.160" az="-0.850" bx="-2.413" by="1.160" bz="-0.850" width="0.75" taper="0.8" midpoint="0.50"/>
 
-  <fuselage ax="4.021" ay="-1.86" az="-0.67" bx="-0.53" by="-1.86" bz="-0.67" width="0.75" taper="0.8" midpoint="0.50"/>
+  <fuselage ax="3.321" ay="-1.160" az="-0.850" bx="-2.413" by="-1.160" bz="-0.850" width="0.75" taper="0.8" midpoint="0.50"/>
 
-  <wing x="1.358" y="0.622" z="-0.26"
-        length="4.58" 
-        chord="2.65" 
-        taper="0.5"
-        incidence="1" 
-        twist="-1.0"
-        sweep="10.0" 
-        dihedral="6.3">
+  <wing x="1.6" y="0.622" z="-0.860"
+        chord="4" 
+        length="6.9" 
+        taper="0.4"
+        dihedral="3"
+        sweep="47"
+        camber="0.01">
         <stall aoa="16" width="3" peak="1.3"/>
         <flap0 start="0.017" end="0.573" lift="1.3" drag="1.5"/>
         <flap1 start="0.573" end="0.945" lift="1.1" drag="1.0"/>
@@ -62,27 +56,25 @@
         <control-output control="FLAP1" prop="/surface-positions/aileron-pos-norm"/>
    </wing>
 
-   <hstab x="-5.15" y="0" z="0.84"
-         length="1.46" 
-         chord="1.33" 
-         taper="0.25"
-         dihedral="0.0">
-         <!-- effectiveness="1.5"> -->
+   <hstab x="-4.8" y="0" z="0.047"
+         chord="1.7" 
+         length="2.1" 
+         taper="0.45"
+         sweep="40">
          <stall aoa="20" width="3" peak="1.3"/>
- 
-        <flap0 start="0.1" end="0.8" lift="1.6" drag="1.5"/>
-        <flap1 start="0.1" end="0.8" lift="1.6" drag="1.5"/>
-        <control-input axis="/controls/flight/elevator" square="false" control="FLAP0" />
-        <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
-        <control-output control="FLAP0" side="left" prop="/surface-positions/left-elevator-pos-norm"/>
-        <control-output control="FLAP0" side="right" prop="/surface-positions/right-elevator-pos-norm"/>
+         <flap0 start="0.1" end="0.8" lift="1.6" drag="1.5"/>
+         <flap1 start="0.1" end="0.8" lift="1.6" drag="1.5"/>
+         <control-input axis="/controls/flight/elevator" square="false" control="FLAP0" />
+         <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
+         <control-output control="FLAP0" side="left" prop="/surface-positions/left-elevator-pos-norm"/>
+         <control-output control="FLAP0" side="right" prop="/surface-positions/right-elevator-pos-norm"/>
   </hstab>
 
-  <vstab x="-5.70" y="0.00" z="1.17"
-         length="0.707" 
+  <vstab x="-5.099" y="0.00" z="-0.836"
          chord="2.25" 
+         length="2.3" 
+         sweep="10"
          taper="0.25">
-         <!-- effectiveness="2"> -->
          <stall aoa="16" width="5" peak="1.5"/>
          <flap0 start="0.1" end="0.9" lift="1.8" drag="1.3"/>
          <control-input axis="/controls/flight/rudder" control="FLAP0" invert="true"/>
@@ -94,7 +86,7 @@
    Junkers Jumo 004B turbojet
    8.8 kN (1,980 lbf) 8700 rpm
   -->
-  <jet x="1.74" y="1.86" z="-0.59"
+  <jet x="-2.350" y="1.095" z="-0.889"
        n1-idle="30" 
        n1-max="90" 
        n2-idle="35" 
@@ -106,7 +98,7 @@
        <control-input axis="/controls/engines/engine[0]/throttle" control="THROTTLE"/>
   </jet>
   
-  <jet x="1.74" y="-1.86" z="-0.59" 
+  <jet x="-2.350" y="-1.095" z="-0.889" 
        n1-idle="30" 
        n1-max="90" 
        n2-idle="35" 
@@ -117,12 +109,6 @@
        thrust="1980" >
        <control-input axis="/controls/engines/engine[1]/throttle" control="THROTTLE"/>
 </jet>
-
-  <!-- Internal tanks 
-   2*280 liter wings
-  -->
-  <tank x="1.10" y="-2.3" z="0.10" jet="true" capacity="1250"/>
-  <tank x="1.10"  y="2.3" z="0.10" jet="true" capacity="1250"/>
 
   <!-- Undercarriage -->
   <!-- nose -->
@@ -171,9 +157,12 @@
         <control-speed control="EXTEND" transition-time="7"/>
   </gear>
 
-  <!-- CG Théorique x=1.358 y=0 z=-0.260 -->
-  <!-- x à 1.536 pour être en avant des roues -->
-  <ballast x="3.00" y="0.0" z="-1.55" mass="1000"/>
+  <!-- Internal tanks 2*280 liter wings -->
+  <tank x="1.10" y="-2.3" z="-0.8" jet="true" capacity="1250"/>
+  <tank x="1.10"  y="2.3" z="-0.8" jet="true" capacity="1250"/>
+
+  <!-- CG Theorique x=1.6 y=0 z=-0.86 -->
+  <ballast x="6" y="0" z="-1.55" mass="1500"/>
 
 </airplane>
 

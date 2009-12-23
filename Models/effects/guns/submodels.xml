@@ -24,7 +24,8 @@
     <collision>true</collision>
     <collision-report>sim/ai/aircraft/collision/gun</collision-report>
     <impact>true</impact>
-    <impact-report>sim/ai/aircraft/impact/gun</impact-report>
+    <impact-report>sim/ai/aircraft/impact/bullet</impact-report>
+    <submodel-path>Aircraft/ME-262HGIII/Models/effects/guns/bullet-submodel.xml</submodel-path>
   </submodel>
 
   <!--right up-->
@@ -49,7 +50,8 @@
     <collision>true</collision>
     <collision-report>sim/ai/aircraft/collision/gun</collision-report>
     <impact>true</impact>
-    <impact-report>sim/ai/aircraft/impact/gun</impact-report>
+    <impact-report>sim/ai/aircraft/impact/bullet</impact-report>
+    <submodel-path>Aircraft/ME-262HGIII/Models/effects/guns/bullet-submodel.xml</submodel-path>
   </submodel>
 
   <!-- left-down -->
@@ -74,7 +76,8 @@
     <collision>true</collision>
     <collision-report>sim/ai/aircraft/collision/gun</collision-report>
     <impact>true</impact>
-    <impact-report>sim/ai/aircraft/impact/gun</impact-report>
+    <impact-report>sim/ai/aircraft/impact/bullet</impact-report>
+    <submodel-path>Aircraft/ME-262HGIII/Models/effects/guns/bullet-submodel.xml</submodel-path>
   </submodel>
 
   <!--right down-->
@@ -99,7 +102,8 @@
     <collision>true</collision>
     <collision-report>sim/ai/aircraft/collision/gun</collision-report>
     <impact>true</impact>
-    <impact-report>sim/ai/aircraft/impact/gun</impact-report>
+    <impact-report>sim/ai/aircraft/impact/bullet</impact-report>
+    <submodel-path>Aircraft/ME-262HGIII/Models/effects/guns/bullet-submodel.xml</submodel-path>
   </submodel>
 
 </PropertyList>
