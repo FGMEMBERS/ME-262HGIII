@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- <PropertyList include="me262hg3-jsbsim-cnf.xml"> -->
+<PropertyList include="me262hg3-yasim-cnf.xml">
+
+  <sim>
+    <description>Messerschmitt Me-262 HG III</description>
+    <author>Emmanuel BARANGER (3D/ / Michael KOEHNE (FDM) / Laurent HAYVEL (Texture)</author>
+  </sim>
+
+</PropertyList>
+

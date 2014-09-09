@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>panel.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>panel</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- AI -->
+  <model>
+    <path>Aircraft/ME-262HGIII/Models/Interior/Panels/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m> 0.362 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.236 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/ME-262HGIII/Models/Interior/Panels/Instruments/airspeed/airspeed.xml</path>
+    <offsets>
+      <x-m>  0.362 </x-m>
+      <y-m> -0.082 </y-m>
+      <z-m>  0.236 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/ME-262HGIII/Models/Interior/Panels/Instruments/clock/clock.xml</path>
+    <offsets>
+      <x-m>  0.362 </x-m>
+      <y-m> -0.230 </y-m>
+      <z-m>  0.140 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/ME-262HGIII/Models/Interior/Panels/Instruments/revi16b/revi-ger.xml</path>
+    <offsets>
+      <x-m>  0.353 </x-m>
+      <y-m>  0.000  </y-m>
+      <z-m>  0.375 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/ME-262HGIII/Models/Interior/Panels/Instruments/compass/compass.xml</path>
+    <offsets>
+      <x-m> 0.362 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.160 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/ME-262HGIII/Models/Interior/Panels/Instruments/throttle/throttle1.xml</path>
+    <offsets>
+      <x-m> 0.362 </x-m>
+      <y-m> 0.090 </y-m>
+      <z-m> 0.210 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/ME-262HGIII/Models/Interior/Panels/Instruments/throttle/throttle2.xml</path>
+    <offsets>
+      <x-m> 0.362 </x-m>
+      <y-m> 0.160 </y-m>
+      <z-m> 0.210 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/ME-262HGIII/Models/Interior/Panels/Instruments/egt/egtL.xml</path>
+    <offsets>
+      <x-m> 0.362 </x-m>
+      <y-m> 0.090 </y-m>
+      <z-m> 0.140 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/ME-262HGIII/Models/Interior/Panels/Instruments/egt/egtR.xml</path>
+    <offsets>
+      <x-m> 0.362 </x-m>
+      <y-m> 0.140 </y-m>
+      <z-m> 0.140 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/ME-262HGIII/Models/Interior/Panels/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m>  0.362 </x-m>
+      <y-m> -0.080 </y-m>
+      <z-m>  0.160 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/ME-262HGIII/Models/Interior/Panels/Instruments/pression/pressionL.xml</path>
+    <offsets>
+      <x-m> 0.362 </x-m>
+      <y-m> 0.090 </y-m>
+      <z-m> 0.080 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/ME-262HGIII/Models/Interior/Panels/Instruments/pression/pressionR.xml</path>
+    <offsets>
+      <x-m> 0.362 </x-m>
+      <y-m> 0.140 </y-m>
+      <z-m> 0.080 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/ME-262HGIII/Models/Interior/Panels/Instruments/fuel/fuelL.xml</path>
+    <offsets>
+      <x-m> 0.362 </x-m>
+      <y-m> 0.190 </y-m>
+      <z-m> 0.080 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/ME-262HGIII/Models/Interior/Panels/Instruments/fuel/fuelR.xml</path>
+    <offsets>
+      <x-m> 0.362 </x-m>
+      <y-m> 0.240 </y-m>
+      <z-m> 0.080 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
