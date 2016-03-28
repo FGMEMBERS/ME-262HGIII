@@ -6,8 +6,8 @@
     
     <model>
       <livery>
-        <name type="string">Default</name>
-        <texture>texture.png</texture>
+        <name type="string">Camo</name>
+        <texture>Liveries/1024x1024/camo.png</texture>
         <specular>
           <red>   0.05 </red>
           <green> 0.05 </green>
