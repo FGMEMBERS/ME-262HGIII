@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -8,23 +8,19 @@
     <!-- Objets opaques -->
     <object-name>interieur</object-name>
     <object-name>inttour</object-name>
-
+    <object-name>inttourverriere</object-name>
+    <object-name>planchet</object-name>
+    
     <!-- Objets transparents -->
     <object-name>intvitres</object-name>
+    <object-name>intverriere</object-name>
   </animation>
 
-  <animation>
-    <type>noshadow</type>
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
     <object-name>intvitres</object-name>
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>shader.png</texture>
-    <object-name>intvitres</object-name>
-  </animation>
-
+  </effect>
+  
   <!-- Pilote -->
   <model>
     <path>Aircraft/ME-262HGIII/Models/Pilot/pilot.xml</path>
@@ -35,6 +31,16 @@
     </offsets>
   </model>
 
+  <!-- Seat -->
+  <model>
+    <path>Aircraft/ME-262HGIII/Models/Interior/Seat/seat.xml</path>
+    <offsets>
+      <x-m>  2.40 </x-m>
+      <y-m>  0.00 </y-m>
+      <z-m> -0.32 </z-m>
+    </offsets>
+  </model>
+  
   <!-- Tableau de bord -->
   <model>
     <path>Aircraft/ME-262HGIII/Models/Interior/Panels/panel.xml</path>
@@ -45,5 +51,46 @@
     </offsets>
   </model>
 
+  <!-- Canopy -->
+  <animation>
+    <name>IntCanopy</name>
+    <object-name>inttourverriere</object-name>
+    <object-name>intverriere</object-name>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>IntCanopy</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>IntCanopy</object-name>
+    <property>sim/model/door-positions/crew/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.00 </ind><dep>   0 </dep></entry>
+      <entry><ind> 0.25 </ind><dep> -10 </dep></entry>
+      <entry><ind> 0.50 </ind><dep> -20 </dep></entry>
+      <entry><ind> 0.75 </ind><dep> -45 </dep></entry>
+      <entry><ind> 1.00 </ind><dep> -90 </dep></entry>
+    </interpolation>
+    <axis>
+      <x1-m>  2.23741 </x1-m>
+      <y1-m>  0.28377 </y1-m>
+      <z1-m> -0.18580 </z1-m>
+      <x2-m>  3.04808 </x2-m>
+      <y2-m>  0.14871 </y2-m>
+      <z2-m>  0.55311 </z2-m>
+    </axis>
+  </animation>
+  
 </PropertyList>
-

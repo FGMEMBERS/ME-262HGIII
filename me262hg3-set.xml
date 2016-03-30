@@ -1,12 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
-<!-- <PropertyList include="me262hg3-jsbsim-cnf.xml"> -->
-<PropertyList include="me262hg3-yasim-cnf.xml">
+<PropertyList include="me262hg3-base.xml">
 
   <sim>
-    <description>Messerschmitt Me-262 HG III</description>
-    <author>Emmanuel BARANGER (3D/ / Michael KOEHNE (FDM) / Laurent HAYVEL (Texture)</author>
+    
+    <description>Messerschmitt Me-262 HG III (YASim)</description>
+    <author>Emmanuel BARANGER (3D/FDM)</author>
+    
+    <flight-model>yasim</flight-model>
+    <aero>me262hg3-yasim</aero>
+    
+    <rating>
+      <FDM type="int">     3 </FDM>
+      <systems type="int"> 1 </systems>
+      <cockpit type="int"> 3 </cockpit>
+      <model type="int">   4 </model>
+    </rating>
+    
   </sim>
 
 </PropertyList>
-

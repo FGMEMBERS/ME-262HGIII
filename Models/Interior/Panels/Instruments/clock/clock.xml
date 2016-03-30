@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -15,18 +15,17 @@
     <object-name>vitre</object-name>
   </animation>
 
-  <animation>
-    <type>noshadow</type>
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/ME-262HGIII/Models/Effects/Glass/glass</inherits-from>
     <object-name>vitre</object-name>
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>glass.png</texture>
-    <object-name>vitre</object-name>
-  </animation>
-
+  </effect>
+  
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>intvitres</object-name>
+  </effect>
+  
   <animation>
     <type>material</type>
     <object-name>face</object-name>
@@ -44,8 +43,8 @@
   <animation>
     <type>rotate</type>
     <object-name>HourHand</object-name>
-    <property>/instrumentation/clock/indicated-sec</property>
-    <factor>0.00833333333333333</factor>
+    <property>instrumentation/clock/indicated-sec</property>
+    <factor> 0.00833333333333333 </factor>
     <axis>
      <x> -1 </x>
      <y>  0 </y>
@@ -56,8 +55,8 @@
   <animation>
     <type>rotate</type>
     <object-name>MinuteHand</object-name>
-    <property>/instrumentation/clock/indicated-sec</property>
-    <factor>0.1</factor>
+    <property>instrumentation/clock/indicated-sec</property>
+    <factor> 0.1 </factor>
     <axis>
      <x> -1 </x>
      <y>  0 </y>
@@ -68,8 +67,8 @@
   <animation>
     <type>rotate</type>
     <object-name>SecondHand</object-name>
-    <property>/instrumentation/clock/indicated-sec</property>
-    <factor>6</factor>
+    <property>instrumentation/clock/indicated-sec</property>
+    <factor> 6 </factor>
     <center>
       <x-m>  0.000 </x-m>
       <y-m>  0.000 </y-m>
