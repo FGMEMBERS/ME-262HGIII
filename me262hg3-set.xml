@@ -9,6 +9,19 @@
     
     <flight-model>yasim</flight-model>
     <aero>me262hg3-yasim</aero>
+
+    <tags>
+      <tag>messerschmitt</tag>
+      <tag>low-wing</tag>
+      <tag>tricycle</tag>
+      <tag>retractable-gear</tag>
+      <tag>twin-engine</tag>
+      <tag>jet</tag>
+      <tag>fighter</tag>
+      <tag>prototype</tag>
+      <tag>1940s</tag>
+      <tag>ww2</tag>
+    </tags>
     
     <rating>
       <FDM type="int">     3 </FDM>
