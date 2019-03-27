@@ -167,6 +167,6 @@
   <tank x="1.10"  y="2.3" z="-0.8" jet="true" capacity="1250"/>
 
   <!-- Mass displacement -->
-  <ballast x="4" y="0" z="-0.9" mass="1500""/>
+  <ballast x="4" y="0" z="-0.9" mass="1500"/>
 
 </airplane>
