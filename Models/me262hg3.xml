@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -145,7 +145,7 @@
   
   <!-- working for Rembrandt -->
   <effect>
-    <inherits-from>Aircraft/Heston-Type5/Models/Effects/Glass/glass</inherits-from>
+    <inherits-from>Aircraft/ME-262HGIII/Models/Effects/Glass/glass</inherits-from>
     <object-name>vitres</object-name>
     <object-name>verriere</object-name>
   </effect>
@@ -322,7 +322,7 @@
     </offsets>
   </model>
   
-  <!-- Rotation des hélices des réacteurs -->
+  <!-- Rotation des hÃ©lices des rÃ©acteurs -->
   <animation>
     <type>spin</type>
     <object-name>heliceG1</object-name>
@@ -502,7 +502,7 @@
     </axis>
   </animation>
 
-  <!-- Rentré des roues -->
+  <!-- RentrÃ© des roues -->
   <animation>
     <name>TrainAvant</name>
     <object-name>roueA</object-name>
